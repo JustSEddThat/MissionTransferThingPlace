@@ -13,6 +13,12 @@ public class Planet : MonoBehaviour
 	#region Player Variables
 
 	public float health;
+	[Range(1,6)]
+	public int diseaseLevel;
+	[Range(0,7)]
+	public int resources;
+
+	private float builtPower;
 
 	#endregion
 
@@ -22,7 +28,7 @@ public class Planet : MonoBehaviour
 
 	void Start ()
 	{
-		
+		builtPower = 0;
 	}
 
 	void Update ()
@@ -39,6 +45,15 @@ public class Planet : MonoBehaviour
 
 	}
 
+	void BuildDisease(int diseaseLvl)
+	{
+		builtPower += ConvertDLToPower(diseaseLvl);
+
+		resources -= diseaseLvl;
+
+	}
+
+
 	void Shoot ()
 	{
 		if (virus != null)
@@ -49,11 +64,45 @@ public class Planet : MonoBehaviour
 			if (shot.GetComponent<Virus> ())
 			{
 				shot.GetComponent<Virus> ().player = this;
+				//virus damage should be equal to the combined damage values of the chosen DiseaseLevels
+				shot.GetComponent<Virus> ().dmg = builtPower;
 			}
+		}
+
+		//reset built power after shooting projectile;
+		builtPower = 0;
+	}
+
+	float ConvertDLToPower(int lvl)
+	{
+		switch (lvl) 
+		{
+		case 1:
+			return 50;
+
+		case 2:
+			return 100;
+
+		case 3:
+			return 200;
+
+		case 4:
+			return 350;
+
+		case 5: 
+			return 500;
+
+		case 6:
+			return 1000;
+
+		default:
+			Debug.Log ("some shit wrong bro");
+			return 3;
+
 		}
 	}
 
-	public void TakeDamage (int dmg)
+	public void TakeDamage (float dmg)
 	{
 		health -= dmg;
 	}
