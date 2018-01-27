@@ -16,6 +16,9 @@ public class Planet : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b9040dc... bang bang
 =======
 >>>>>>> parent of b9040dc... bang bang
 	[Range(1,6)]
@@ -25,6 +28,7 @@ public class Planet : MonoBehaviour
 
 	private float builtPower;
 
+<<<<<<< HEAD
 	#endregion
 
 <<<<<<< HEAD
@@ -33,6 +37,12 @@ public class Planet : MonoBehaviour
 
 >>>>>>> parent of df95285... Planet script added
 =======
+	public float radius;
+
+>>>>>>> parent of b9040dc... bang bang
+=======
+	#endregion
+
 	public float radius;
 
 >>>>>>> parent of b9040dc... bang bang
@@ -117,6 +127,7 @@ public class Planet : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public void TakeDamage (float dmg)
 =======
 	public void TakeDamage(int dmg)
@@ -124,6 +135,9 @@ public class Planet : MonoBehaviour
 =======
 	public void TakeDamage(int dmg)
 >>>>>>> parent of df95285... Planet script added
+=======
+	public void TakeDamage (float dmg)
+>>>>>>> parent of b9040dc... bang bang
 =======
 	public void TakeDamage (float dmg)
 >>>>>>> parent of b9040dc... bang bang

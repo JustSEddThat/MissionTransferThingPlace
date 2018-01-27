@@ -305,6 +305,9 @@ Canvas:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b9040dc... bang bang
 =======
 >>>>>>> parent of b9040dc... bang bang
 --- !u!114 &179462805
@@ -1033,10 +1036,13 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 982670459}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of df95285... Planet script added
 =======
 >>>>>>> parent of df95285... Planet script added
+=======
+>>>>>>> parent of b9040dc... bang bang
 =======
 >>>>>>> parent of b9040dc... bang bang
 --- !u!1 &1273099802
@@ -1074,6 +1080,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   diseaseLevel: 0
   resources: 0
   radius: 0
@@ -1081,6 +1088,11 @@ MonoBehaviour:
 >>>>>>> parent of df95285... Planet script added
 =======
 >>>>>>> parent of df95285... Planet script added
+=======
+  diseaseLevel: 0
+  resources: 0
+  radius: 0
+>>>>>>> parent of b9040dc... bang bang
 =======
   diseaseLevel: 0
   resources: 0
@@ -1327,6 +1339,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   diseaseLevel: 0
   resources: 0
   radius: 10
@@ -1334,6 +1347,11 @@ MonoBehaviour:
 >>>>>>> parent of df95285... Planet script added
 =======
 >>>>>>> parent of df95285... Planet script added
+=======
+  diseaseLevel: 0
+  resources: 0
+  radius: 10
+>>>>>>> parent of b9040dc... bang bang
 =======
   diseaseLevel: 0
   resources: 0
