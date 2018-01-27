@@ -15,7 +15,7 @@ public class Virus : MonoBehaviour
 
 	public float speed;
 
-	public float dmg;
+	public int dmg;
 
 	void Start ()
 	{
