@@ -218,7 +218,6 @@ GameObject:
   - component: {fileID: 179462804}
   - component: {fileID: 179462803}
   - component: {fileID: 179462802}
-  - component: {fileID: 179462805}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -302,6 +301,7 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+<<<<<<< HEAD
 --- !u!114 &179462805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,6 +1027,8 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 982670459}
+=======
+>>>>>>> parent of df95285... Planet script added
 --- !u!1 &1273099802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,9 +1061,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1378986518}
   health: 0
+<<<<<<< HEAD
   diseaseLevel: 0
   resources: 0
   radius: 0
+=======
+>>>>>>> parent of df95285... Planet script added
   virus: {fileID: 0}
 --- !u!23 &1273099804
 MeshRenderer:
@@ -1300,9 +1305,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1273099803}
   health: 0
+<<<<<<< HEAD
   diseaseLevel: 0
   resources: 0
   radius: 10
+=======
+>>>>>>> parent of df95285... Planet script added
   virus: {fileID: 1072077770274842, guid: 33beb2a00c4430146b1d45f6330644b5, type: 2}
 --- !u!23 &1378986519
 MeshRenderer:
@@ -1589,12 +1597,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 3
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 0
-  m_FillAmount: 0.991
+  m_FillMethod: 4
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &2003196135
@@ -1976,8 +1984,8 @@ Camera:
   m_GameObject: {fileID: 2125264986}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.14013842, g: 0.16284603, b: 0.19852942, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
