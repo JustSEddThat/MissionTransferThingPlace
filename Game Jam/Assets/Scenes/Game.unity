@@ -302,6 +302,7 @@ Canvas:
   m_SortingOrder: 0
   m_TargetDisplay: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &179462805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,6 +1030,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 982670459}
 =======
 >>>>>>> parent of df95285... Planet script added
+=======
+>>>>>>> parent of df95285... Planet script added
 --- !u!1 &1273099802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,9 +1065,12 @@ MonoBehaviour:
   enemy: {fileID: 1378986518}
   health: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   diseaseLevel: 0
   resources: 0
   radius: 0
+=======
+>>>>>>> parent of df95285... Planet script added
 =======
 >>>>>>> parent of df95285... Planet script added
   virus: {fileID: 0}
@@ -1306,9 +1312,12 @@ MonoBehaviour:
   enemy: {fileID: 1273099803}
   health: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   diseaseLevel: 0
   resources: 0
   radius: 10
+=======
+>>>>>>> parent of df95285... Planet script added
 =======
 >>>>>>> parent of df95285... Planet script added
   virus: {fileID: 1072077770274842, guid: 33beb2a00c4430146b1d45f6330644b5, type: 2}

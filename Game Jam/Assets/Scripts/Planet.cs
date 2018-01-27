@@ -11,6 +11,7 @@ public class Planet : MonoBehaviour
 	#region Player Variables
 	public float health;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	[Range(1,6)]
 	public int diseaseLevel;
 	[Range(0,7)]
@@ -22,6 +23,10 @@ public class Planet : MonoBehaviour
 >>>>>>> parent of df95285... Planet script added
 	#endregion
 
+=======
+	#endregion
+
+>>>>>>> parent of df95285... Planet script added
 	public GameObject virus;
 
 	void Start ()
@@ -99,7 +104,11 @@ public class Planet : MonoBehaviour
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public void TakeDamage (float dmg)
+=======
+	public void TakeDamage(int dmg)
+>>>>>>> parent of df95285... Planet script added
 =======
 	public void TakeDamage(int dmg)
 >>>>>>> parent of df95285... Planet script added
