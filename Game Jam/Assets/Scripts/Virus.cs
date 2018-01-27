@@ -24,38 +24,34 @@ public class Virus : MonoBehaviour
 
 	void LateUpdate ()
 	{
-		//MoveToTarget ();
-		MoveToTargetRotation ();
-	}
-
-	void OnTriggerEnter (Collider other)
-	{
-		if (other.gameObject != player.gameObject)
-		{
-			enemy.TakeDamage (dmg);
-			Destroy (this.gameObject);
-
-		}
-	}
-
-	void MoveToTarget()
-	{
-		Debug.Log ("Move to target");
-
-		Vector3 pos = Vector3.MoveTowards (player.transform.position, player.enemy.transform.position, 100f);
+		Vector3 pos = Vector3.MoveTowards (player.transform.position,player.enemy.transform.position, 100f);
 
 		transform.position += Vector3.Lerp (player.transform.position, pos, 0.005f);
 	}
 
-	void MoveToTargetRotation ()
+	void OnCollisionEnter(Collision other)
 	{
-		Debug.Log ("Move to target rotation");
+		if (other.gameObject != player)
+		{
+			if (other.gameObject == enemy)
+			{
+				enemy.TakeDamage (dmg);
+			}
+		}
+	}
+
+	void CalculateRotation()
+	{
 		Vector3 dir = player.enemy.gameObject.transform.position - player.gameObject.transform.position;
 		dir.Normalize ();
 
-		Vector3 rotateAmt = Vector3.Cross (dir, enemy.gameObject.transform.position);
+		float rotateAmtX = Vector3.Cross (dir, transform.right).x;
+		float rotateAmtY = Vector3.Cross (dir, transform.up).y;
+		float rotateAmtZ = Vector3.Cross (dir, transform.forward).z;
 
-		rb.angularVelocity = -rotateAmt * rotateSpeed;
+		Vector3 rotationAmt = new Vector3 (rotateAmtX, rotateAmtY, rotateAmtZ);
+
+		rb.angularVelocity = rotationAmt * rotateSpeed;
 
 		rb.velocity = transform.forward * speed;
 
