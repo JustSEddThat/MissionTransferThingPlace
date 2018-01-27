@@ -45,7 +45,7 @@ public class Planet : MonoBehaviour
 
 	}
 
-	void BuildDisease(int diseaseLvl)
+	public void BuildDisease(int diseaseLvl)
 	{
 		builtPower += ConvertDLToPower(diseaseLvl);
 
