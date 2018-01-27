@@ -5,13 +5,19 @@ using UnityEngine;
 public class Planet : MonoBehaviour
 {
 	#region Enemy variables
+
 	public Planet enemy;
+
 	#endregion
 
 	#region Player Variables
+
 	public float health;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b9040dc... bang bang
 	[Range(1,6)]
 	public int diseaseLevel;
 	[Range(0,7)]
@@ -19,14 +25,17 @@ public class Planet : MonoBehaviour
 
 	private float builtPower;
 
-=======
->>>>>>> parent of df95285... Planet script added
 	#endregion
 
+<<<<<<< HEAD
 =======
 	#endregion
 
 >>>>>>> parent of df95285... Planet script added
+=======
+	public float radius;
+
+>>>>>>> parent of b9040dc... bang bang
 	public GameObject virus;
 
 	void Start ()
@@ -61,7 +70,9 @@ public class Planet : MonoBehaviour
 	{
 		if (virus != null)
 		{
-			GameObject shot = Instantiate (virus, Vector3.zero, Quaternion.identity);
+			Vector3 loc = Random.insideUnitSphere * radius;
+			GameObject shot = Instantiate (virus, loc, Quaternion.identity);
+
 			if (shot.GetComponent<Virus> ())
 			{
 				shot.GetComponent<Virus> ().player = this;
@@ -105,6 +116,7 @@ public class Planet : MonoBehaviour
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public void TakeDamage (float dmg)
 =======
 	public void TakeDamage(int dmg)
@@ -112,6 +124,9 @@ public class Planet : MonoBehaviour
 =======
 	public void TakeDamage(int dmg)
 >>>>>>> parent of df95285... Planet script added
+=======
+	public void TakeDamage (float dmg)
+>>>>>>> parent of b9040dc... bang bang
 	{
 		health -= dmg;
 	}
